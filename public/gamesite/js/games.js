@@ -13,7 +13,7 @@ indexedDb.databases()
   })
 */
 
-const gamesContainer = document.querySelector('https://shiny-bear-pantsuit.cyclic.app/gamesite/js/games.js');
+const gamesContainer = document.querySelector('game.html');
 const searchBar = document.querySelector('.searchbar');
 const gameContainer = document.querySelector('.gamecontainer');
 const gameFrame = gameContainer.querySelector('.frame');
