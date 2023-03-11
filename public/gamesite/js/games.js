@@ -13,7 +13,7 @@ indexedDb.databases()
   })
 */
 
-const gamesContainer = document.querySelector('game.html');
+const gamesContainer = document.querySelector('game');
 const searchBar = document.querySelector('.searchbar');
 const gameContainer = document.querySelector('.gamecontainer');
 const gameFrame = gameContainer.querySelector('.frame');
@@ -59,7 +59,7 @@ fetch('./assets/json/games.json')
         gameContainer.classList.remove('hidden');
         document.querySelector('.saveItems').classList.add('hidden');
         document.querySelector('.navbar').classList.add('noshadow');
-        gameFrame.querySelector('iframe').src = `./assets/game?game=${game.root}`;
+        gameFrame.querySelector('iframe').src = `./assets/game.html?game=${game.root}`;
       }
 
       gameNav.querySelector('#back').addEventListener('click', (e) => {
